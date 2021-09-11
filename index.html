@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <title>Strong Password</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1><i class="fas fa-code"></i> Validate Your Password</h1>
+        <h2>Your password</h2>
+      </div>
+      <div class="text-div1">
+        <p>Must contain</p>
+        <ul>
+          <li>At least 8 characters</li>
+          <li>An uppercase letter</li>
+          <li>A special character</li>
+          <li>A number</li>
+        </ul>
+      </div>
+      <div class="text-div3">
+        <p>Better to have</p>
+        <ul>
+          <li>10 characters</li>
+        </ul>
+      </div>
+      <div class="text-div2">
+        <p>Should avoid</p>
+        <ul>
+          <li>Spaces</li>
+          <li>Less than 8 characters</li>
+          <li>More than 20 characters</li>
+        </ul>
+      </div>
+      <div class="form-wrapper">
+        <form class="pword-input-div" id="getform">
+          <div>
+            <label for="password">Enter Password</label>
+            <div class="pass-wrapper">
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                autocomplete="off"
+                required
+              />
+              <i class="fas fa-eye" id="togglePassword"></i>
+            </div>
+            <div>
+              <input type="submit" id="submit" value="Validate" />
+              <input
+                type="reset"
+                value="Reset"
+                onclick="window.location.href=window.location.href"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="pass-strength">
+        <p>Password Strength</p>
+        <p><span>Weak</span><span>Okay</span><span>Strong</span></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

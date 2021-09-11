@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(12, 0, 187) 100%
+  );
+  font-family: Monospace, Sans-serif;
+}
+
+div h1,
+h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+div h1 {
+  font-size: 1.6rem;
+}
+
+div h2 {
+  font-size: 1.4rem;
+}
+
+.text-div1 p {
+  color: rgb(81, 255, 0);
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+ul {
+  color: rgb(255, 255, 255);
+  padding: 1rem 1.2rem;
+}
+
+.text-div2 p {
+  color: #ff0000;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.text-div3 p {
+  color: rgb(251 255 0);
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pword-input-div {
+  border: 3px solid rgb(255, 255, 255);
+  padding: 1rem;
+  margin: 1rem;
+  width: 80%;
+}
+
+form {
+  position: relative;
+}
+
+form div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.pass-wrapper {
+  position: relative;
+}
+
+.pass-wrapper i {
+  position: absolute;
+  right: 1em;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.pword-input-div label {
+  display: block;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+input[type="password"] {
+  display: block;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-family: inherit;
+}
+
+input[type="password"]:focus {
+  border: 3px solid rgb(17, 0, 255);
+}
+
+input[type="text"] {
+  display: block;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-family: inherit;
+}
+
+input[type="text"]:focus {
+  border: 3px solid rgb(17, 0, 255);
+}
+
+input[type="submit"] {
+  display: block;
+  max-width: 8rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  outline: none;
+  border: 2px solid rgb(17, 0, 255);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input[type="reset"] {
+  display: block;
+  max-width: 8rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  outline: none;
+  border: 2px solid rgb(17, 0, 255);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.pass-strength {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.pass-strength p:nth-child(1) {
+  font-size: 1.4rem;
+}
+
+.pass-strength p:nth-child(2) {
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.pass-strength span {
+  margin: 1rem;
+  border-bottom: 2px solid #ffffff;
+}
+
+@media (min-width: 768px) {
+  .pword-input-div {
+    width: 50%;
+  }
+  div h2 {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .pass-strength p {
+    display: inline-block;
+    padding: 0 1.5rem;
+  }
+}
