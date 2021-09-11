@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "monospace", sans-serif;
+  font-family: monospace;
 }
 
 body {
@@ -21,6 +21,7 @@ h2 {
   color: rgb(255, 255, 255);
   text-align: center;
   margin: 1rem 0;
+  font-weight: 600;
 }
 
 div h1 {
@@ -99,6 +100,7 @@ form div div {
   display: block;
   font-size: 1.4rem;
   color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 input[type="password"] {
@@ -154,11 +156,11 @@ input[type="reset"] {
 .pass-strength {
   text-align: center;
   color: #ffffff;
-  font-weight: 600;
 }
 
 .pass-strength p:nth-child(1) {
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .pass-strength p:nth-child(2) {
