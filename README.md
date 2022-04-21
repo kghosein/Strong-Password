@@ -1,3 +1,3 @@
 # Strong-Password
 
-Live preview: https://kghosein.github.io/Strong-Password/
+Live preview: https://kghosein.github.io/strong-password/
